@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #d2d8d6;
+    height: 100vh;
+    max-height: 100vh; 
+    margin: 0; 
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto); 
+    grid-template-columns: repeat(8, 1fr); 
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr; 
+    }
+  
+    .row-span-12 {
+      grid-row: span 6;
+    }
+  
+  
+  }
+  
